@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+	<TableRow
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:paddingTop="10dip"
+            android:textColor="#00ff00"
+			android:paddingBottom="50dip" />
+	</TableRow>
+
+	<TableRow
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="50dp">
+
+		<ViewFlipper
+			android:id="@+id/FLIPPER_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_launcher"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_launcher"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_launcher"/>
+            </LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:layout_gravity="center"
+				android:gravity="center">
+				<ImageView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:src="@mipmap/ic_launcher"/>
+			</LinearLayout>
+        </ViewFlipper>
+
+		<ViewFlipper
+			android:id="@+id/FLIPPER_2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:layout_column="1"
+			android:layout_marginLeft="10dp">
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:layout_gravity="center"
+				android:gravity="center" >
+
+				<ImageView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:src="@mipmap/ic_launcher" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:layout_gravity="center"
+				android:gravity="center" >
+
+				<ImageView
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_gravity="center"
+					android:src="@mipmap/ic_launcher" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:layout_gravity="center"
+				android:gravity="center" >
+
+				<ImageView
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_gravity="center"
+					android:src="@mipmap/ic_launcher" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:layout_gravity="center"
+				android:gravity="center">
+				<ImageView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:src="@mipmap/ic_launcher"/>
+			</LinearLayout>
+		</ViewFlipper>
+
+		<ViewFlipper
+			android:id="@+id/FLIPPER_3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:layout_column="2"
+			android:layout_marginLeft="10dp">
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:layout_gravity="center"
+				android:gravity="center" >
+
+				<ImageView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:src="@mipmap/ic_launcher" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:layout_gravity="center"
+				android:gravity="center" >
+
+				<ImageView
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_gravity="center"
+					android:src="@mipmap/ic_launcher" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:layout_gravity="center"
+				android:gravity="center" >
+
+				<ImageView
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_gravity="center"
+					android:src="@mipmap/ic_launcher" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:layout_gravity="center"
+				android:gravity="center">
+				<ImageView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:src="@mipmap/ic_launcher"/>
+			</LinearLayout>
+		</ViewFlipper>
+	</TableRow>
+
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+	</TableRow>
+
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+	</TableRow>
+
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+	</TableRow>
+
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+	</TableRow>
+
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+	</TableRow>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:onClick="SpinUp"
+			android:nestedScrollingEnabled="false"
+			android:layout_marginLeft="101dp"
+			android:layout_marginStart="101dp"
+			android:layout_alignTop="@+id/button2"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true" />
+
+		<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal"
+            android:onClick="SpinDown"
+			android:layout_alignParentTop="true"
+			android:layout_toRightOf="@+id/button"
+			android:layout_toEndOf="@+id/button"
+			android:layout_marginTop="111dp" />
+
+		<TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sometext"
+            android:gravity="center"
+			android:layout_below="@+id/button"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="50dp"
+            android:layout_marginBottom="0dp" />
+	</RelativeLayout>
+	<ViewAnimator
+		android:id="@+id/sample_output"
+		android:layout_width="match_parent"
+		android:layout_height="0px"
+		android:layout_weight="1">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp" />
+		<fragment
+			android:name="com.mt.common.logger.LogFragment"
+			android:id="@+id/log_fragment"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" />
+
+	</ViewAnimator>
+</TableLayout>
