@@ -94,22 +94,12 @@ public class Spinner {
 
         new Handler().postDelayed(stop,1000);
 
-
-        /*Runnable evaluate= new Runnable() {
-            public void run() {
-                mStopped = true;
-            }
-        };
-
-        new Handler().postDelayed(evaluate, 1000);*/
-       // new Thread(stop).start();
-
     }
 
 
 
     public int GetFruit(){
-        //return mViewFlipper.getChildAt(mViewFlipper.getDisplayedChild());
+
         return mViewFlipper.getDisplayedChild();
 
     }
