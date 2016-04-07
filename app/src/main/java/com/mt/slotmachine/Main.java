@@ -38,9 +38,7 @@ public class Main extends SampleActivityBase {
 
 	private Spinner[] Spinner = new Spinner[4];
 	private int BASE_SPEED = 350;
-	//private long spinSpeed[] = new long[4];
-    ImageProvider.ImagePair[] ip;
-
+	ImageProvider.ImagePair[] ip;
 
 
     @Override
@@ -81,7 +79,6 @@ public class Main extends SampleActivityBase {
 
                 return  null;
 
-              //  return ip;
             }
 
             @Override
@@ -215,13 +212,11 @@ public class Main extends SampleActivityBase {
             Spinner[2].mSpinSpeed = BASE_SPEED/2;
             Spinner[2].Start();
             r2.run();
-            //new Handler().postDelayed(r2, (long) (BASE_SPEED*1.5));
 
             r3 = new SpinRunner(3);
             Spinner[3].mSpinSpeed = BASE_SPEED/3;
             Spinner[3].Start();
             r3.run();
-            //new Handler().postDelayed(r3, (long) (BASE_SPEED*2.5));
         }
 	}
 
@@ -281,12 +276,9 @@ public class Main extends SampleActivityBase {
                    + String.valueOf(Spinner[3].GetFruit());
         boolean result = CheckScore(tmp);
 
-        //((TextView)findViewById(R.id.sometext)).setText("" + tmp + result);
-
-
         String resultString = ip[Spinner[1].GetFruit()].name+" " +ip[Spinner[2].GetFruit()].name+" "+ip[Spinner[3].GetFruit()].name;
         if (result) {
-            resultString += " VYHRA!"; // dat text ze string resources?
+            resultString += " VYHRA!"; // dat text do string resources?
             ((TextView)findViewById(R.id.sometext)).setText(R.string.win);
         }
         PublishResults(resultString);
@@ -300,10 +292,7 @@ public class Main extends SampleActivityBase {
         String[] grules = getResources().getStringArray(R.array.game_rules);
         Collections.addAll(gamerules, grules);
 
-//        gamerules.add("000");
-//        gamerules.add("111");
-//        gamerules.add("222");
-//        gamerules.add("333");
+//        gamerules je retezec 000,111,222,333
 
         return gamerules.contains(result);
 
@@ -312,7 +301,6 @@ public class Main extends SampleActivityBase {
 
     private void PublishResults(String resultString) {
 
-        //Log.println(0,"VYSLEDEK:", resultString);
         Log.d("VYSLEDEK", resultString);
 
     }
