@@ -33,10 +33,9 @@ import com.mt.common.logger.MessageOnlyLogFilter;
 public class Main extends SampleActivityBase {
 
     private boolean mLogShown;
-
-	private ViewFlipper[] mViewFlipper = new ViewFlipper[4];
-
-	private Spinner[] Spinner = new Spinner[4];
+    final int SPINNERS_COUNT = 3;
+	private ViewFlipper[] mViewFlipper = new ViewFlipper[SPINNERS_COUNT+1];
+	private Spinner[] Spinner = new Spinner[SPINNERS_COUNT+1];
 	private int BASE_SPEED = 350;
 	ImageProvider.ImagePair[] ip;
 
@@ -77,7 +76,7 @@ public class Main extends SampleActivityBase {
                     return null;
                 }
 
-                return  null;
+                return ip;
 
             }
 
@@ -201,11 +200,10 @@ public class Main extends SampleActivityBase {
             findViewById(R.id.button).setEnabled(false);
             ((TextView)findViewById(R.id.sometext)).setText("");
 
+            // hodnoty rychlosti toceni ... experimentalni
             r1 = new SpinRunner(1);
-
             Spinner[1].mSpinSpeed = (long) (BASE_SPEED/3.5); //2.5?
             Spinner[1].Start();
-
             r1.run();
 
             r2 = new SpinRunner(2);
@@ -224,6 +222,11 @@ public class Main extends SampleActivityBase {
     public void SpinDown(View view) {
 
         if (Spinner[1].Stopped()) return;
+
+
+        //for (int i=0;i<SPINNERS_COUNT;i++) {
+
+        //}
 
 
         new Handler().post(new Runnable() {
@@ -259,8 +262,6 @@ public class Main extends SampleActivityBase {
 
                         EvaluateResults();
 
-                        findViewById(R.id.button).setEnabled(true);
-
                     }
                 }, 500);
 
@@ -282,6 +283,7 @@ public class Main extends SampleActivityBase {
             ((TextView)findViewById(R.id.sometext)).setText(R.string.win);
         }
         PublishResults(resultString);
+        findViewById(R.id.button).setEnabled(true);
 
 
     }
